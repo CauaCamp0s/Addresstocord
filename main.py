@@ -60,7 +60,7 @@ def processar_excel(excel_file):
 
 # Lista de caminhos dos arquivos Excel
 excel_files = [
-    r"C:\Users\caua.campos\Desktop\novosProjetos\XLSX\novo.xlsx",
+    r"caminhodoseuarquivo\novo.xlsx",
 ]
 
 # Medir o tempo de execução
@@ -79,7 +79,7 @@ dfs = [pd.read_excel(output_path) for output_path in output_paths]
 df_final = pd.concat(dfs, ignore_index=True)
 
 # Especificar o caminho completo para o arquivo Excel final
-output_final_file_path = r"C:\Users\caua.campos\Desktop\novosProjetos\XLSX\resultado_final.xlsx"
+output_final_file_path = r"caminhodoseuarquivo\resultado_final.xlsx"
 
 # Salvar o DataFrame resultante em um novo arquivo Excel
 df_final.to_excel(output_final_file_path, index=False)
