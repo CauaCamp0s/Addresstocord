@@ -18,7 +18,7 @@
 #         return None, None
 
 
-# caminho_arquivo = "C:\\Users\\caua.campos\\Desktop\\novosProjetos\\ClientesOnMaps.xlsx"
+# caminho_arquivo = "caminhodoseuarquivo\ClientesOnMaps.xlsx"
 # nome_planilha = 'Planilha1'  
 # coluna_enderecos = 'endereços'  
 
@@ -70,11 +70,11 @@ def encontrar_geolocalizacao(endereco):
     finally:
         print(f"Concluída geolocalização para: {endereco}")
 
-caminho_arquivo = r"C:\Users\cauac\OneDrive\Área de Trabalho\importação\ClientesOnMaps.xlsx"
+caminho_arquivo = r"caminhodoseuarquivo\ClientesOnMaps.xlsx"
 nome_planilha = 'Planilha1'
 coluna_enderecos = 'endereços'
-caminho_saida_excel = r"C:\Users\cauac\OneDrive\Área de Trabalho\importação\ResultadosGeolocalizacao.xlsx"
-caminho_saida_excel_sem_lat_long = r"C:\Users\cauac\OneDrive\Área de Trabalho\importação\EnderecosSemGeolocalizacao.xlsx"
+caminho_saida_excel = r"caminhodoseuarquivo\ResultadosGeolocalizacao.xlsx"
+caminho_saida_excel_sem_lat_long = r"caminhodoseuarquivo\EnderecosSemGeolocalizacao.xlsx"
 
 try:
     dados_excel = pd.read_excel(caminho_arquivo, sheet_name=nome_planilha)
